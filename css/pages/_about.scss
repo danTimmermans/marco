@@ -1,0 +1,71 @@
+.about-header{
+    position: fixed;
+    height: 120px;
+}
+.about-main{
+    padding-top: 120px;
+}
+p{
+    font-size: 14px;
+}
+h2{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.wrap{
+    width: 50%;
+    margin: 0 auto;
+}
+.pic{
+    width: 100%;
+    img{
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+.infos{
+    :first-child{
+        padding-bottom: 20px;
+    }
+}
+.info{
+    h2{
+        padding-bottom: 25px;
+    }
+}
+.presentation{
+    width: 52%;
+    p{
+        padding-bottom: 20px;
+        line-height: 30px;
+    }
+}
+.boutons{
+    padding: 20px 0;
+    a {
+        @include mylink;
+        color: #fff;
+    }
+    :first-child{
+        border: 1px solid #fff;
+        padding: 20px;
+    }
+    :last-child{
+        padding-left: 20px;
+    }
+}
+.about-footer{
+    position: relative;
+
+}
+@media screen and (max-width:990px){
+    .wrap{
+        width: 70%;
+    }
+}

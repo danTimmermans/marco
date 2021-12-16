@@ -1,0 +1,34 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    a{
+        @include mylink;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    nav {
+        @include mynav(flex, space-between);
+        padding-right: 20px;
+        a{
+            @include mylink;
+            color: #fff;
+            font-size: 14px;
+            text-transform: none;
+            padding-right: 20px;
+        }
+        a:hover {
+            text-decoration: line-through;
+        }
+    }
+}
+@media screen and (max-width:990px) {
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        nav{
+            padding: 20px;
+        }
+    }
+}
